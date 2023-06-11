@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>popover</title>
+  </head>
+  <body>
+    <button popovertarget="" my-popover>Open Popover</button>
+    <div id="my-popover" popover>
+      <p>popover contents</p>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    【popover属性】
+    2023年6月リリースのChrome114でサポートされたpopoverAPIにて使用できるようになった。
+    HTMLのポップオーバーは以下をサポートしている。
+    ・最上位のレイヤーに昇格
+    ・ライトディスミス機能＿領域外をクリックするとポップオーバーが閉じる。
+    ・デフォルトのフォーカス管理＿ポップオーバーを開くと、ポップオーバー内で次のタブが停止。
+    ・escを押すとポップオーバーが閉じる。
+    ・ポップオーバーの要素とトリガーを意味的に結びつける。
+
+    実装には以下の３つが必要。
+    1.ポップオーバーを含む要素のpopover属性
+    2.ポップオーバーを含む要素のid
+    3.id値と同じ値を持つポップオーバーを開く要素のpopovertarget
+ -->
